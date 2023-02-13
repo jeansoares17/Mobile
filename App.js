@@ -10,6 +10,11 @@ export default class App extends React.Component {
       mensagem: ''
     }
   }
+
+mudouMensagem = msg => {
+  this.setState({mensagem:msg})
+}
+
   render() { 
     return (
       <View style={styles.container}>
